@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Premium SEO Metadata -->
+    <title>Cafe Beats Signature | Ultra-Premium Luxury Coffee Experience</title>
+    <meta name="description" content="Indulge in a premium dark-luxury coffee lounge experience. Cafe Beats Signature serves artisanal single-origin espresso, gourmet culinary specialties, and high-end signature mocktails.">
+    <meta name="keywords" content="luxury cafe, premium coffee, Cafe Beats, gourmet burger, single-origin espresso, artisanal coffee, cold brew, dark aesthetic cafe">
+    
+    <!-- Open Graph (Instagram/Facebook sharing) -->
+    <meta property="og:title" content="Cafe Beats Signature | Luxury Coffee Experience">
+    <meta property="og:description" content="Artisanal single-origin brews and exquisite culinary specialties in an elegant glassmorphism setting.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?q=80&w=1200&auto=format&fit=crop">
+    <meta property="og:type" content="website">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="index.css">
+
+    <!-- Lucide Vector Icons Library -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <!-- =========================================
+         LOADING SCREEN
+         ========================================= -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-content">
+            <div class="steam-container">
+                <span class="steam-line s1"></span>
+                <span class="steam-line s2"></span>
+                <span class="steam-line s3"></span>
+            </div>
+            
+            <!-- Sleek Coffee Cup Outline SVG -->
+            <svg class="loader-cup" viewBox="0 0 24 24" fill="none" stroke="#c19a6b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 8h1a4 4 0 1 1 0 8h-1" />
+                <path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z" />
+                <line x1="6" y1="2" x2="6" y2="4" />
+                <line x1="10" y1="2" x2="10" y2="4" />
+                <line x1="14" y1="2" x2="14" y2="4" />
+            </svg>
+            
+            <h1 class="preloader-title glow-text">CAFE BEATS</h1>
+            <p class="preloader-subtitle">Signature</p>
+            <div class="progress-bar-container">
+                <div class="progress-bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- =========================================
+         NAVIGATION HEADER
+         ========================================= -->
+    <header id="header">
+        <nav class="nav-container">
+            <a href="#" class="logo">
+                <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M17 8h1a4 4 0 1 1 0 8h-1" />
+                    <path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z" />
+                    <line x1="6" y1="2" x2="6" y2="4" />
+                    <line x1="10" y1="2" x2="10" y2="4" />
+                    <line x1="14" y1="2" x2="14" y2="4" />
+                </svg>
+                <div class="logo-text">
+                    CAFE BEATS
+                    <span>Signature</span>
+                </div>
+            </a>
+
+            <!-- Desktop Menu -->
+            <ul class="nav-menu">
+                <li><a href="#" class="nav-link active" id="nav-home">Home</a></li>
+                <li><a href="#specialties" class="nav-link" id="nav-specialties">Specialties</a></li>
+                <li><a href="#menu" class="nav-link" id="nav-menu">Menu</a></li>
+                <li><a href="#gallery" class="nav-link" id="nav-gallery">Gallery</a></li>
+                <li><a href="#reviews" class="nav-link" id="nav-reviews">Reviews</a></li>
+                <li><a href="#contact" class="nav-link" id="nav-contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-right">
+                <a href="#menu" class="btn-primary nav-btn">
+                    <i data-lucide="shopping-bag"></i> Order Now
+                </a>
+                
+                <!-- Modern Hamburger -->
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile Fullscreen Overlay -->
+    <div class="mobile-overlay" id="mobile-overlay">
+        <ul class="mobile-menu">
+            <li class="mobile-menu-item"><a href="#" class="mobile-link active" id="mob-home">Home</a></li>
+            <li class="mobile-menu-item"><a href="#specialties" class="mobile-link" id="mob-specialties">Specialties</a></li>
+            <li class="mobile-menu-item"><a href="#menu" class="mobile-link" id="mob-menu">Signature Menu</a></li>
+            <li class="mobile-menu-item"><a href="#gallery" class="mobile-link" id="mob-gallery">Gallery</a></li>
+            <li class="mobile-menu-item"><a href="#reviews" class="mobile-link" id="mob-reviews">Reviews</a></li>
+            <li class="mobile-menu-item"><a href="#contact" class="mobile-link" id="mob-contact">Contact Us</a></li>
+            <li class="mobile-menu-item" style="margin-top: 15px;">
+                <a href="#menu" class="btn-primary" id="mob-cta">
+                    <i data-lucide="shopping-bag"></i> Explore Menu
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- =========================================
+         HERO SECTION
+         ========================================= -->
+    <section class="hero" id="home">
+        <div class="hero-bg" style="background-image: url('https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?q=80&w=1600&auto=format&fit=crop');"></div>
+        <div class="hero-overlay"></div>
+        
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i data-lucide="award" style="width: 14px; height: 14px;"></i> The Gold Standard of Coffee
+                </div>
+                <h1 class="hero-title">
+                    More Than Coffee. <br>
+                    <span>An Experience.</span>
+                </h1>
+                <p class="hero-desc">
+                    Immerse yourself in a luxurious dark-themed roasting lounge. Crafted with raw passion, single-origin reserve beans, and served alongside bespoke culinary masterpieces.
+                </p>
+                <div class="hero-actions">
+                    <a href="#menu" class="btn-primary">
+                        <i data-lucide="coffee"></i> Explore Menu
+                    </a>
+                    <a href="#contact" class="btn-secondary">
+                        <i data-lucide="navigation"></i> Locate Lounge
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Hero Floating Cup illustration -->
+            <div class="hero-visual">
+                <div class="hero-glow-back"></div>
+                <div class="hero-cup-wrapper">
+                    <!-- Rising steam animation above the cup -->
+                    <div class="hero-steam-box">
+                        <span class="steam-line s1"></span>
+                        <span class="steam-line s2"></span>
+                        <span class="steam-line s3"></span>
+                    </div>
+                    <img class="hero-cup-img" src="luxury_coffee_cup.png" alt="Sleek Roasted Espresso Cup">
+                </div>
+            </div>
+        </div>
+
+        <a href="#specialties" class="scroll-indicator">
+            <span>Scroll To Indulge</span>
+            <div class="scroll-mouse"></div>
+        </a>
+    </section>
+
+    <!-- =========================================
+         FEATURED SPECIALITIES
+         ========================================= -->
+    <section class="specialties" id="specialties">
+        <div class="section-header reveal">
+            <span class="section-badge">Curated Offerings</span>
+            <h2 class="section-title">Luxury <span>Specialties</span></h2>
+            <p>Every creation is meticulously engineered to tantalize the senses, merging exquisite textures with premium ingredients.</p>
+        </div>
+
+        <div class="specialties-grid">
+            <!-- Specialty Card 1 -->
+            <div class="specialty-card glass-panel reveal">
+                <div class="specialty-icon-box">
+                    <i data-lucide="coffee" class="specialty-icon"></i>
+                </div>
+                <h3 class="specialty-title">Signature Coffee</h3>
+                <p class="specialty-desc">Exquisite hand-dripped V60, bold cold drips, and custom signature single-origin espresso creations.</p>
+            </div>
+
+            <!-- Specialty Card 2 -->
+            <div class="specialty-card glass-panel reveal reveal-delay-1">
+                <div class="specialty-icon-box">
+                    <i data-lucide="snowflake" class="specialty-icon"></i>
+                </div>
+                <h3 class="specialty-title">Cold Brews</h3>
+                <p class="specialty-desc">24-hour slow-drip infused cold drafts, Nitro infusions, and velvety chocolate-cream frappes.</p>
+            </div>
+
+            <!-- Specialty Card 3 -->
+            <div class="specialty-card glass-panel reveal reveal-delay-2">
+                <div class="specialty-icon-box">
+                    <i data-lucide="sandwich" class="specialty-icon"></i>
+                </div>
+                <h3 class="specialty-title">Gourmet Burgers</h3>
+                <p class="specialty-desc">Wagyu beef patty or organic plant patties glazed in luxury black truffle butter on brioche.</p>
+            </div>
+
+            <!-- Specialty Card 4 -->
+            <div class="specialty-card glass-panel reveal reveal-delay-3">
+                <div class="specialty-icon-box">
+                    <i data-lucide="pizza" class="specialty-icon"></i>
+                </div>
+                <h3 class="specialty-title">Artisanal Pizza</h3>
+                <p class="specialty-desc">Neapolitan hand-stretched dough baked in wood fires with golden olive oils and fresh bufala cheese.</p>
+            </div>
+
+            <!-- Specialty Card 5 -->
+            <div class="specialty-card glass-panel reveal">
+                <div class="specialty-icon-box">
+                    <i data-lucide="sandwich" class="specialty-icon"></i>
+                </div>
+                <h3 class="specialty-title">Luxury Toasties</h3>
+                <p class="specialty-desc">Grilled signature sourdough layered with aged white cheddar, fresh pestos, and fine charcuterie.</p>
+            </div>
+
+            <!-- Specialty Card 6 -->
+            <div class="specialty-card glass-panel reveal reveal-delay-1">
+                <div class="specialty-icon-box">
+                    <i data-lucide="cake" class="specialty-icon"></i>
+                </div>
+                <h3 class="specialty-title">Fine Desserts</h3>
+                <p class="specialty-desc">Belgian melting souffles, golden crusted tarts, and fresh macaron platters designed by master chefs.</p>
+            </div>
+
+            <!-- Specialty Card 7 -->
+            <div class="specialty-card glass-panel reveal reveal-delay-2">
+                <div class="specialty-icon-box">
+                    <i data-lucide="glass-water" class="specialty-icon"></i>
+                </div>
+                <h3 class="specialty-title">Signature Mocktails</h3>
+                <p class="specialty-desc">Exotic botanical syrups, molecular smoke bubbles, and dynamic citrus gradients over crystal cubes.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================
+         WHY CHOOSE US & STATS SECTION
+         ========================================= -->
+    <section class="stats" id="stats">
+        <div class="stats-container">
+            <div class="stats-visual reveal reveal-left">
+                <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?q=80&w=800&auto=format&fit=crop" alt="Premium Barista Station">
+                <div class="stats-glass-badge glass-panel">
+                    <div class="stats-badge-val">100%</div>
+                    <div class="stats-badge-lbl">Single-Origin Reserve Arabica</div>
+                </div>
+            </div>
+
+            <div class="stats-content reveal reveal-right">
+                <span class="section-badge">Unrivaled Quality</span>
+                <h2 class="about-title">A Symphony of <span>Taste & Passion</span></h2>
+                <p class="about-p">
+                    At Cafe Beats Signature, we treat coffee brewing as a form of fine art. From bean selection across high-altitude estates to roasting methods overseen by master roasters, our standards are uncompromising.
+                </p>
+                
+                <div class="stats-grid">
+                    <!-- Stat 1 -->
+                    <div class="stat-item glass-panel">
+                        <div class="stat-num" data-val="1000">0</div>
+                        <div class="stat-label">Happy Clients</div>
+                        <p class="stat-desc">Elite regular lounge members who call our space home.</p>
+                    </div>
+                    
+                    <!-- Stat 2 -->
+                    <div class="stat-item glass-panel">
+                        <div class="stat-num" data-val="15">0</div>
+                        <div class="stat-label">Min Delivery</div>
+                        <p class="stat-desc">Fast-tracked courier systems that keep brews blazing hot.</p>
+                    </div>
+
+                    <!-- Stat 3 -->
+                    <div class="stat-item glass-panel">
+                        <div class="stat-num" data-val="100">0</div>
+                        <div class="stat-label">% Organic</div>
+                        <p class="stat-desc">Fresh botanicals and top-tier ingredients sourced daily.</p>
+                    </div>
+
+                    <!-- Stat 4 -->
+                    <div class="stat-item glass-panel">
+                        <div class="stat-num" data-val="25">0</div>
+                        <div class="stat-label">Signature Brews</div>
+                        <p class="stat-desc">Bespoke formulations unique only to our coffee menu.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================
+         SIGNATURE MENU SECTION
+         ========================================= -->
+    <section class="menu-section" id="menu">
+        <div class="section-header reveal">
+            <span class="section-badge">Selected Masterpieces</span>
+            <h2 class="section-title">The Signature <span>Menu</span></h2>
+            <p>Order direct to enjoy fresh luxury creations delivered directly to your doorstep with premium high-end packaging.</p>
+        </div>
+
+        <!-- Dynamic Category Filter Tabs -->
+        <div class="menu-filter-container reveal">
+            <button class="filter-btn active" data-filter="all">All Items</button>
+            <button class="filter-btn" data-filter="coffee">Gourmet Brews</button>
+            <button class="filter-btn" data-filter="food">Signature Bites</button>
+            <button class="filter-btn" data-filter="dessert">Sweet Delicacies</button>
+            <button class="filter-btn" data-filter="mocktail">Botanical Mocktails</button>
+        </div>
+
+        <!-- Menu Cards Grid -->
+        <div class="menu-grid">
+            
+            <!-- Product Item 1 (Coffee) -->
+            <div class="menu-card glass-panel reveal" data-category="coffee">
+                <div class="menu-card-img-box">
+                    <img src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?q=80&w=400&auto=format&fit=crop" alt="Espresso Gold Layer">
+                </div>
+                <div class="menu-card-content">
+                    <div class="menu-card-header">
+                        <h4 class="menu-item-name">V60 Ethiopian Reserve</h4>
+                        <span class="menu-item-price">₹450</span>
+                    </div>
+                    <p class="menu-item-desc">Single-origin washed Ethiopian beans with vibrant floral notes, citrus zest, and honeyed sweet tones.</p>
+                    <div class="menu-item-footer">
+                        <a href="https://wa.me/919999999999?text=I%20would%20like%20to%20order%20the%20V60%20Ethiopian%20Reserve" target="_blank" class="menu-order-btn">
+                            Order Now <i data-lucide="arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Item 2 (Coffee) -->
+            <div class="menu-card glass-panel reveal reveal-delay-1" data-category="coffee">
+                <div class="menu-card-img-box">
+                    <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?q=80&w=400&auto=format&fit=crop" alt="Affogato Gold Crusted">
+                </div>
+                <div class="menu-card-content">
+                    <div class="menu-card-header">
+                        <h4 class="menu-item-name">Velvet Cloud Nitro Draft</h4>
+                        <span class="menu-item-price">₹490</span>
+                    </div>
+                    <p class="menu-item-desc">24hr cold-brewed coffee infused with pressurized nitrogen, topped with organic vanilla milk foam.</p>
+                    <div class="menu-item-footer">
+                        <a href="https://wa.me/919999999999?text=I%20would%20like%20to%20order%20the%20Velvet%20Cloud%20Nitro%20Draft" target="_blank" class="menu-order-btn">
+                            Order Now <i data-lucide="arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Item 3 (Food) -->
+            <div class="menu-card glass-panel reveal" data-category="food">
+                <div class="menu-card-img-box">
+                    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=400&auto=format&fit=crop" alt="Premium Gold Burger">
+                </div>
+                <div class="menu-card-content">
+                    <div class="menu-card-header">
+                        <h4 class="menu-item-name">Black Truffle Wagyu Burger</h4>
+                        <span class="menu-item-price">₹850</span>
+                    </div>
+                    <p class="menu-item-desc">A5 Wagyu beef, melted mature cave aged cheddar, freshly shaved Italian truffles, on custom toasted brioche.</p>
+                    <div class="menu-item-footer">
+                        <a href="https://wa.me/919999999999?text=I%20would%20like%20to%20order%20the%20Black%20Truffle%20Wagyu%20Burger" target="_blank" class="menu-order-btn">
+                            Order Now <i data-lucide="arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Item 4 (Food) -->
+            <div class="menu-card glass-panel reveal reveal-delay-1" data-category="food">
+                <div class="menu-card-img-box">
+                    <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=400&auto=format&fit=crop" alt="Pesto Bufala Pizza">
+                </div>
+                <div class="menu-card-content">
+                    <div class="menu-card-header">
+                        <h4 class="menu-item-name">Bufala Margherita Artisanal</h4>
+                        <span class="menu-item-price">₹680</span>
+                    </div>
+                    <p class="menu-item-desc">Freshly crushed San Marzano tomatoes, premium imported Campanian bufala, fresh basil, and cold-pressed olive drizzle.</p>
+                    <div class="menu-item-footer">
+                        <a href="https://wa.me/919999999999?text=I%20would%20like%20to%20order%20the%20Bufala%20Margherita%20Artisanal" target="_blank" class="menu-order-btn">
+                            Order Now <i data-lucide="arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Item 5 (Food) -->
+            <div class="menu-card glass-panel reveal" data-category="food">
+                <div class="menu-card-img-box">
+                    <img src="https://images.unsplash.com/photo-1521390188846-e2a3a97453a0?q=80&w=400&auto=format&fit=crop" alt="Aged Cheddar Toasted sourdough">
+                </div>
+                <div class="menu-card-content">
+                    <div class="menu-card-header">
+                        <h4 class="menu-item-name">Tuscan Prosciutto Club</h4>
+                        <span class="menu-item-price">₹550</span>
+                    </div>
+                    <p class="menu-item-desc">Aged prosciutto di Parma, wild arugula, sun-dried heirloom cherry tomatoes, and creamy house-made pesto spread.</p>
+                    <div class="menu-item-footer">
+                        <a href="https://wa.me/919999999999?text=I%20would%20like%20to%20order%20the%20Tuscan%20Prosciutto%20Club" target="_blank" class="menu-order-btn">
+                            Order Now <i data-lucide="arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Item 6 (Dessert) -->
+            <div class="menu-card glass-panel reveal reveal-delay-1" data-category="dessert">
+                <div class="menu-card-img-box">
+                    <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=400&auto=format&fit=crop" alt="Belgian Soufflé Gold">
+                </div>
+                <div class="menu-card-content">
+                    <div class="menu-card-header">
+                        <h4 class="menu-item-name">Molten Gold Chocolate Fondant</h4>
+                        <span class="menu-item-price">₹480</span>
+                    </div>
+                    <p class="menu-item-desc">Warm lava cake baked with 74% Belgian dark chocolate, layered with organic gold leaf accents and Madagascar vanilla.</p>
+                    <div class="menu-item-footer">
+                        <a href="https://wa.me/919999999999?text=I%20would%20like%20to%20order%20the%20Molten%20Gold%20Chocolate%20Fondant" target="_blank" class="menu-order-btn">
+                            Order Now <i data-lucide="arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Item 7 (Mocktail) -->
+            <div class="menu-card glass-panel reveal" data-category="mocktail">
+                <div class="menu-card-img-box">
+                    <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?q=80&w=400&auto=format&fit=crop" alt="Smoky Botanical Mocktail">
+                </div>
+                <div class="menu-card-content">
+                    <div class="menu-card-header">
+                        <h4 class="menu-item-name">Citrus Botanical Elixir</h4>
+                        <span class="menu-item-price">₹390</span>
+                    </div>
+                    <p class="menu-item-desc">Freshly distilled lavender syrups, rosemary essence, elderflower water, and citric bubbles under molecular woodsmoke.</p>
+                    <div class="menu-item-footer">
+                        <a href="https://wa.me/919999999999?text=I%20would%20like%20to%20order%20the%20Citrus%20Botanical%20Elixir" target="_blank" class="menu-order-btn">
+                            Order Now <i data-lucide="arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- =========================================
+         ORDERING EXPERIENCE SECTION (TIMELINE)
+         ========================================= -->
+    <section class="ordering-experience" id="ordering-flow">
+        <div class="section-header reveal">
+            <span class="section-badge">Frictionless Path</span>
+            <h2 class="section-title">The <span>Order Journey</span></h2>
+            <p>From browsing to tasting, our custom workflow ensures an uncompromising level of luxury delivery standards.</p>
+        </div>
+
+        <div class="timeline-container reveal">
+            <div class="timeline-line"></div>
+            
+            <!-- Step 1 -->
+            <div class="timeline-step">
+                <div class="timeline-node">
+                    <div class="timeline-node-inner">
+                        <i data-lucide="tablet-smartphone"></i>
+                        <span class="timeline-step-val">01</span>
+                    </div>
+                </div>
+                <h3 class="timeline-step-title">Browse Menu</h3>
+                <p class="timeline-step-desc">Explore our handpicked collection of gourmet coffee & luxury signature bites.</p>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="timeline-step">
+                <div class="timeline-node">
+                    <div class="timeline-node-inner">
+                        <i data-lucide="check-square"></i>
+                        <span class="timeline-step-val">02</span>
+                    </div>
+                </div>
+                <h3 class="timeline-step-title">Choose Items</h3>
+                <p class="timeline-step-desc">Customize your coffee extraction details or gourmet side pairings.</p>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="timeline-step">
+                <div class="timeline-node">
+                    <div class="timeline-node-inner">
+                        <i data-lucide="map-pin"></i>
+                        <span class="timeline-step-val">03</span>
+                    </div>
+                </div>
+                <h3 class="timeline-step-title">Enter Address</h3>
+                <p class="timeline-step-desc">Fill in details on our luxury order form or drop a rapid GPS pin on WhatsApp.</p>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="timeline-step">
+                <div class="timeline-node">
+                    <div class="timeline-node-inner">
+                        <i data-lucide="credit-card"></i>
+                        <span class="timeline-step-val">04</span>
+                    </div>
+                </div>
+                <h3 class="timeline-step-title">Confirm Order</h3>
+                <p class="timeline-step-desc">Enjoy high-speed, instant secure payment verification within seconds.</p>
+            </div>
+
+            <!-- Step 5 -->
+            <div class="timeline-step">
+                <div class="timeline-node">
+                    <div class="timeline-node-inner">
+                        <i data-lucide="bike"></i>
+                        <span class="timeline-step-val">05</span>
+                    </div>
+                </div>
+                <h3 class="timeline-step-title">Fast Delivery</h3>
+                <p class="timeline-step-desc">Hot items travel in custom thermo-insulated luxury luxury carry bags.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================
+         CAFE GALLERY
+         ========================================= -->
+    <section class="gallery-section" id="gallery">
+        <div class="section-header reveal">
+            <span class="section-badge">Visual Indulgence</span>
+            <h2 class="section-title">The Cafe <span>Gallery</span></h2>
+            <p>Take a virtual stroll through our high-end boutique interior lounge, capturing real luxury aesthetics.</p>
+        </div>
+
+        <div class="gallery-container">
+            <div class="gallery-masonry">
+                <!-- Gallery 1 (Interior) -->
+                <div class="gallery-item reveal" data-title="Modern Reserve Bar" data-cat="Lounge Interior">
+                    <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=600&auto=format&fit=crop" alt="Premium Reserve Bar Layout">
+                    <div class="gallery-overlay">
+                        <div class="gallery-category">Lounge Interior</div>
+                        <div class="gallery-title">Modern Reserve Bar</div>
+                    </div>
+                </div>
+
+                <!-- Gallery 2 (Coffee) -->
+                <div class="gallery-item reveal" data-title="Rosetta Micro-Foam Latte" data-cat="Artisanal Brew">
+                    <img src="https://images.unsplash.com/photo-1507133750040-4a8f57021571?q=80&w=600&auto=format&fit=crop" alt="Beautiful latte art rosetta">
+                    <div class="gallery-overlay">
+                        <div class="gallery-category">Artisanal Brew</div>
+                        <div class="gallery-title">Rosetta Micro-Foam Latte</div>
+                    </div>
+                </div>
+
+                <!-- Gallery 3 (Ambience) -->
+                <div class="gallery-item reveal" data-title="Espresso Extraction Station" data-cat="Brewing Ritual">
+                    <img src="https://images.unsplash.com/photo-1453614512568-c4024d13c247?q=80&w=600&auto=format&fit=crop" alt="Barista pulling a gold espresso shot">
+                    <div class="gallery-overlay">
+                        <div class="gallery-category">Brewing Ritual</div>
+                        <div class="gallery-title">Espresso Extraction Station</div>
+                    </div>
+                </div>
+
+                <!-- Gallery 4 (Customers) -->
+                <div class="gallery-item reveal" data-title="Evening Lounge Conversations" data-cat="Ambience">
+                    <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?q=80&w=600&auto=format&fit=crop" alt="Premium customers toasting in the lounge">
+                    <div class="gallery-overlay">
+                        <div class="gallery-category">Ambience</div>
+                        <div class="gallery-title">Evening Lounge Conversations</div>
+                    </div>
+                </div>
+
+                <!-- Gallery 5 (Food) -->
+                <div class="gallery-item reveal" data-title="Gourmet Pastry Display" data-cat="Signature Food">
+                    <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=500&auto=format&fit=crop" alt="Exquisite dark desserts pastries selection">
+                    <div class="gallery-overlay">
+                        <div class="gallery-category">Signature Food</div>
+                        <div class="gallery-title">Gourmet Pastry Display</div>
+                    </div>
+                </div>
+
+                <!-- Gallery 6 (Coffee Beans) -->
+                <div class="gallery-item reveal" data-title="Freshly Roasted Coffee Beans" data-cat="Our Source">
+                    <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?q=80&w=500&auto=format&fit=crop" alt="Barista checking roasted beans quality">
+                    <div class="gallery-overlay">
+                        <div class="gallery-category">Our Source</div>
+                        <div class="gallery-title">Freshly Roasted Coffee Beans</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Custom Gallery Lightbox Overlay -->
+    <div class="lightbox" id="lightbox">
+        <span class="lightbox-close" id="lightbox-close">&times;</span>
+        <span class="lightbox-nav lightbox-prev" id="lightbox-prev">&#10094;</span>
+        <span class="lightbox-nav lightbox-next" id="lightbox-next">&#10095;</span>
+        <div class="lightbox-content">
+            <img class="lightbox-img" id="lightbox-img" src="" alt="">
+            <div class="lightbox-caption" id="lightbox-caption"></div>
+        </div>
+    </div>
+
+    <!-- =========================================
+         CUSTOMER REVIEWS (CAROUSEL)
+         ========================================= -->
+    <section class="reviews-section" id="reviews">
+        <div class="section-header reveal">
+            <span class="section-badge">Client Testimonials</span>
+            <h2 class="section-title">Lounge <span>Opinions</span></h2>
+            <p>Hear from elite patrons who enjoy and support our vision of luxury coffee refinement.</p>
+        </div>
+
+        <div class="carousel-container reveal">
+            <div class="carousel-track" id="carousel-track">
+                
+                <!-- Review Slide 1 -->
+                <div class="carousel-slide">
+                    <div class="review-card">
+                        <div class="review-stars">
+                            <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+                        </div>
+                        <p class="review-text">
+                            "The Neapolitan Margherita pizza is absolutely breathtaking, but the V60 Ethiopian brew is on an entirely new spectrum of excellence. It feels like stepping into a Michelin lounge."
+                        </p>
+                        <div class="review-author">
+                            <img class="author-img" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=150&auto=format&fit=crop" alt="Sophia Mitchell">
+                            <span class="author-name">Sophia Mitchell</span>
+                            <span class="author-role">Gourmet Food Critic</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review Slide 2 -->
+                <div class="carousel-slide">
+                    <div class="review-card">
+                        <div class="review-stars">
+                            <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+                        </div>
+                        <p class="review-text">
+                            "Finding a cafe that matches elite specialty coffee profiles with truffle wagyu burgers is rare. The glassmorphism dark aesthetic is gorgeous. An absolute masterpiece of design."
+                        </p>
+                        <div class="review-author">
+                            <img class="author-img" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=150&auto=format&fit=crop" alt="Ethan Reynolds">
+                            <span class="author-name">Ethan Reynolds</span>
+                            <span class="author-role">Creative Branding Director</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review Slide 3 -->
+                <div class="carousel-slide">
+                    <div class="review-card">
+                        <div class="review-stars">
+                            <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+                        </div>
+                        <p class="review-text">
+                            "Their 15-minute quick delivery was exceptionally hot, arriving in custom padded boxes. It honestly makes office meetings feel like high-end premium catering. Five-star standard."
+                        </p>
+                        <div class="review-author">
+                            <img class="author-img" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=150&auto=format&fit=crop" alt="Elena Rostova">
+                            <span class="author-name">Elena Rostova</span>
+                            <span class="author-role">Regular Patron / CEO</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Navigation Dots -->
+            <div class="carousel-dots" id="carousel-dots">
+                <span class="carousel-dot active" data-slide="0"></span>
+                <span class="carousel-dot" data-slide="1"></span>
+                <span class="carousel-dot" data-slide="2"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================
+         ABOUT THE Lounges
+         ========================================= -->
+    <section class="about-section" id="about">
+        <div class="about-container">
+            <div class="about-visual reveal reveal-left">
+                <div class="about-glow"></div>
+                <div class="about-img-box">
+                    <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?q=80&w=800&auto=format&fit=crop" alt="Artisanal Roaster Selection">
+                </div>
+            </div>
+
+            <div class="about-content reveal reveal-right">
+                <span class="section-badge">The Legacy</span>
+                <h2 class="about-title">Crafting Pure <span>Coffee Rituals</span></h2>
+                <p class="about-p-lead">We believe coffee isn't just a basic commodity; it's a sensory luxury that shapes mornings, inspires relationships, and crafts memories.</p>
+                <p class="about-p">
+                    Founded in 2021, Cafe Beats Signature was designed to bridge luxury minimalism with deep gourmet food profiles. Our roasting experts travel the globe in search of rare Micro-Lot beans. Backed by artisanal chefs, our kitchen builds high-end culinary matches that pair effortlessly with our espresso.
+                </p>
+
+                <div class="about-features">
+                    <div class="about-f-item">
+                        <i data-lucide="check" class="about-f-icon"></i>
+                        <span class="about-f-text">Reserve micro-lot single-origin arabica beans only</span>
+                    </div>
+                    <div class="about-f-item">
+                        <i data-lucide="check" class="about-f-icon"></i>
+                        <span class="about-f-text">Bespoke baking methods and Neapolitan dough standards</span>
+                    </div>
+                    <div class="about-f-item">
+                        <i data-lucide="check" class="about-f-icon"></i>
+                        <span class="about-f-text">Eco-friendly gold-foil thermo packaging formats</span>
+                    </div>
+                </div>
+
+                <a href="#specialties" class="btn-primary">Learn Our Story</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================
+         CONTACT & INQUIRIES
+         ========================================= -->
+    <section class="contact-section" id="contact">
+        <div class="section-header reveal">
+            <span class="section-badge">Reserve or Order</span>
+            <h2 class="section-title">Connect With <span>Cafe Beats</span></h2>
+            <p>Reserve a cozy leather booth, enquire about elite event catering, or place a hot express signature order.</p>
+        </div>
+
+        <div class="contact-container">
+            <div class="contact-info reveal reveal-left">
+                <div class="contact-cards">
+                    <!-- Card 1 -->
+                    <div class="contact-card glass-panel">
+                        <div class="contact-card-icon">
+                            <i data-lucide="phone"></i>
+                        </div>
+                        <div>
+                            <div class="contact-card-title">Call Direct</div>
+                            <div class="contact-card-val">+91 99999 99999</div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="contact-card glass-panel">
+                        <div class="contact-card-icon">
+                            <i data-lucide="message-square"></i>
+                        </div>
+                        <div>
+                            <div class="contact-card-title">Instant WhatsApp</div>
+                            <div class="contact-card-val">+91 99999 99999</div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="contact-card glass-panel">
+                        <div class="contact-card-icon">
+                            <i data-lucide="map-pin"></i>
+                        </div>
+                        <div>
+                            <div class="contact-card-title">Our Lounge Address</div>
+                            <div class="contact-card-val">7th Floor Luxury Avenue, Gold Road, Surat, India</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Custom dark maps element -->
+                <div class="map-embed">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3720.086300407137!2d72.7844005!3d21.188746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04d707c2a71f7%3A0x67db2371be4d8d17!2sSurat%2C%20Gujarat%2C%20India!5e0!3m2!1sen!2sus!4v1689230184920!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+            <!-- Interactive Form with custom label effects -->
+            <div class="contact-form-panel glass-panel reveal reveal-right" style="position: relative;">
+                <h3 class="form-title">Send A Message</h3>
+                <p class="form-subtitle">Enquire about private lounge booking or customized gourmet box requests.</p>
+                
+                <form id="contact-form" autocomplete="off" onsubmit="event.preventDefault();">
+                    <div class="form-group">
+                        <input type="text" id="form-name" class="form-input" placeholder="Name" required>
+                        <label for="form-name" class="form-label">Full Name</label>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="tel" id="form-phone" class="form-input" placeholder="Phone" required>
+                        <label for="form-phone" class="form-label">Phone Number</label>
+                    </div>
+
+                    <div class="form-group">
+                        <textarea id="form-message" class="form-input" placeholder="Message" required></textarea>
+                        <label for="form-message" class="form-label">Your Message / Order details...</label>
+                    </div>
+
+                    <button type="submit" class="btn-primary" style="width: 100%;">
+                        <i data-lucide="send"></i> Transmit Request
+                    </button>
+                </form>
+
+                <!-- Custom Form Success Animation Panel -->
+                <div class="form-success-alert" id="form-success-alert">
+                    <div class="success-icon-box">
+                        <i data-lucide="check"></i>
+                    </div>
+                    <h4 class="form-title" style="margin-bottom: 12px;">Transmission Successful</h4>
+                    <p class="form-subtitle" style="margin-bottom: 25px;">Our VIP client relations team will establish contact within 10 minutes via call or WhatsApp.</p>
+                    <button class="btn-secondary" id="form-reset-btn" style="padding: 10px 24px;">Return</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================
+         FLOATING WIDGETS & BUTTONS
+         ========================================= -->
+    <div class="floating-widgets">
+        <!-- Floating WhatsApp -->
+        <a href="https://wa.me/919999999999?text=Hello%20Cafe%20Beats%20Signature!%20I'd%20like%20to%20order%20some%20gourmet%20coffee." target="_blank" class="float-btn float-whatsapp">
+            <i data-lucide="message-square" style="width: 20px; height: 20px;"></i>
+            <span class="float-tooltip">WhatsApp Concierge</span>
+        </a>
+
+        <!-- Floating Order now -->
+        <a href="#menu" class="float-btn float-order">
+            <i data-lucide="shopping-bag" style="width: 20px; height: 20px;"></i>
+            <span class="float-tooltip">Instant Order</span>
+        </a>
+
+        <!-- Floating Back To Top -->
+        <div class="float-btn float-totop" id="float-totop">
+            <i data-lucide="chevron-up" style="width: 20px; height: 20px;"></i>
+            <span class="float-tooltip">Back To Top</span>
+        </div>
+    </div>
+
+    <!-- =========================================
+         FOOTER
+         ========================================= -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M17 8h1a4 4 0 1 1 0 8h-1" />
+                        <path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z" />
+                        <line x1="6" y1="2" x2="6" y2="4" />
+                        <line x1="10" y1="2" x2="10" y2="4" />
+                        <line x1="14" y1="2" x2="14" y2="4" />
+                    </svg>
+                    <div class="logo-text">
+                        CAFE BEATS
+                        <span>Signature</span>
+                    </div>
+                </a>
+                <p class="footer-desc">
+                    Designing pure coffee refinement, premium comfort spaces, and delicious Neapolitan food pairings. Experience high-end living in Surat's prime luxury cafe.
+                </p>
+                <div class="footer-socials">
+                    <a href="#" class="social-link"><i data-lucide="instagram" style="width: 16px; height: 16px;"></i></a>
+                    <a href="#" class="social-link"><i data-lucide="facebook" style="width: 16px; height: 16px;"></i></a>
+                    <a href="#" class="social-link"><i data-lucide="twitter" style="width: 16px; height: 16px;"></i></a>
+                    <a href="#" class="social-link"><i data-lucide="youtube" style="width: 16px; height: 16px;"></i></a>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="footer-title">Explore Lounge</h4>
+                <ul class="footer-links">
+                    <li><a href="#home">Back to top</a></li>
+                    <li><a href="#specialties">Featured Specialties</a></li>
+                    <li><a href="#menu">Our Signature Menu</a></li>
+                    <li><a href="#gallery">Cafe Interior Gallery</a></li>
+                    <li><a href="#reviews">Patron Reviews</a></li>
+                    <li><a href="#contact">Contact Reservations</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="footer-title">Lounge Hours</h4>
+                <div class="footer-hours-grid">
+                    <div class="hours-row">
+                        <span class="hours-day">Monday - Thursday</span>
+                        <span class="hours-val">08:00 AM - 11:00 PM</span>
+                    </div>
+                    <div class="hours-row">
+                        <span class="hours-day">Friday</span>
+                        <span class="hours-val">08:00 AM - 12:00 AM</span>
+                    </div>
+                    <div class="hours-row weekend">
+                        <span class="hours-day">Saturday - Sunday</span>
+                        <span class="hours-val">09:00 AM - 01:00 AM</span>
+                    </div>
+                    <div class="hours-row" style="border: none; padding-top: 10px;">
+                        <span class="hours-day" style="color: var(--accent); font-weight: 500;">Delivery Available</span>
+                        <span class="hours-val" style="color: var(--accent); font-weight: 600;">24 / 7 Express</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div>&copy; 2026 Cafe Beats Signature. Crafted with pure gold. All rights reserved.</div>
+            <div class="footer-legal">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Reserve</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Core Interactions Script -->
+    <script src="index.js"></script>
+</body>
+</html>
